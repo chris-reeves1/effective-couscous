@@ -6,17 +6,17 @@
 pipeline{
     agent any
 
-    environment {
+    //environment {
         // Used for shell variables. passing to sh. exists whilst pipeline runs.
         // creds/paths + in builts  
-    }
+    //}
 
-    options{
+    //options{
         //timestamps() global
         //disableconcurrentbuilds() global
         //timeout(time: 10, unit: "minutes") global/local
         //retry(5) stage
-    }
+    //}
 
     stages{
         stage("Make a directory"){

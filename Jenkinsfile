@@ -23,7 +23,7 @@ pipeline{
             options{timeout(time: 1, unit: 'MINUTES')}
             steps{
                 //catchError(buildResult:'UNSTABLE' , stageResult:'UNSTABLE'){ 
-                sh "mkdir ~/jenkins-dir" // unique sh command - no scripting here!!          
+                sh "mkdir ~/jenkins-dir || true" // unique sh command - no scripting here!!          
             }
             post{
                 success{
